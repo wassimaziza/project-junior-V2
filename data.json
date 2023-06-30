@@ -1,0 +1,80 @@
+var a =  [
+{
+      "name": "Ford Mustang",
+      "year": 1969,
+      "company": "Ford",
+      "status": "Not repaired"
+    },
+    {
+      "name": "Chevrolet Camaro",
+      "year": 1970,
+       "company": "Chevrolet",
+      "status": "Not repaired"
+    },
+    {
+      "name": "Volkswagen Beetle",
+      "year": 1967,
+      "company": "Volkswagen",
+      "status": "Not repaired"
+    },
+    {
+      "name": "Porsche 911",
+         "year": 1984,
+         "company": "Porsche",
+      "status": "Not repaired"
+    },
+    {
+      "name": "BMW 2002",
+     "year": 1973,
+      "company": "BMW",
+      "status": "Not repaired"
+    },
+    {
+      "name": "Mercedes-Benz SL-Class",
+      "year": 1971,
+       "company": "Mercedes-Benz",
+      "status": "Not repaired"
+    },
+    {
+      "name": "Toyota Land Cruiser",
+     "year": 1980, 
+     "company": "Toyota",
+      "status": "Not repaired"
+    },
+    {
+      "name": "Honda Civic",
+     "year": 1995,
+      "company": "Honda",
+      "status": "Not repaired"
+    },
+    {
+      "name": "Dodge Charger",
+     "year": 1968,
+      "company": "Dodge",
+      "status": "Not repaired"
+    },
+    {
+      "name": "Cadillac Eldorado",
+      "year": 1976,
+      "company": "Cadillac",
+      "status": "Not repaired"
+    },
+    {
+      "name": "Tesla Model S",
+      "year": 2018,
+      "company": "Tesla",
+      "status": "Not repaired"
+    },
+    {
+      "name": "Audi A4",
+     "year": 2020,
+      "company": "Audi",
+      "status": "Not repaired"
+    },
+    {
+      "name": "BMW X5",
+      "year": 2019,
+      "company": "BMW",
+      "status": "Not repaired"
+    },
+]

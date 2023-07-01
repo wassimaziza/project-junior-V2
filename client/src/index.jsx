@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
 import $ from 'jquery'
 import List from './components/List.jsx'
-import axios from 'axios'
 import Add from './components/Add.jsx'
 import Services from './components/Services.jsx'
 
@@ -11,6 +10,7 @@ import Services from './components/Services.jsx'
 const App = () => {
   const [cars, setCars] = useState([])
   const [page, setPage] = useState('home')
+  
   useEffect(() => {
     $.ajax({
       url: 'http://localhost:3000/api/cars',

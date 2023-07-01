@@ -79,7 +79,7 @@ background-size: cover;
         margin: 20px;
         position: relative;
         overflow: hidden;
-        border: 2px solid var(--color);
+        border: 2px solid #449be6;
         transition: color .5s;
         z-index: 1;
         font-size: 17px;
@@ -92,7 +92,7 @@ background-size: cover;
         content: "";
         position: absolute;
         z-index: -1;
-        background: var(--color);
+        background: #449be6;
         height: 150px;
         width: 200px;
         border-radius: 50%;
@@ -245,6 +245,11 @@ background-size: cover;
         .div8 { grid-area: 3 / 2 / 4 / 3; }
         .div9 { grid-area: 3 / 3 / 4 / 4; }
          
-
+        .service h2{
+          font-family: 'Play', sans-serif;
+        }
+.video {
+  margin-left: 32%;
+}
       
     

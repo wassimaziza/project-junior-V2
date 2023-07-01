@@ -13,6 +13,7 @@ function Add() {
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value })
   }
+  console.log(data,"the obj");
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -22,42 +23,43 @@ function Add() {
         console.log(response.data)
       })
       .catch((error) => {
+        console.log("hii");
         console.error(error)
       });
-    setData({
-      name: '',
-      year: '',
-      company: '',
-      status: '',
-      image: ''
-    });
+    // setData({
+    //   name: '',
+    //   year: '',
+    //   company: '',
+    //   status: '',
+    //   image: ''
+    // });
   };
 
   return (
     <div className='form'>
         <center>
       <form onSubmit={handleSubmit} >
-        <label className='text' for='input'>
-         <p>Name:</p> <input type="text" onChange={handleChange} placeholder="write the car's name" className='input'/>
+        <label className='text' htmlFor='input'>
+         <p>Name:</p> <input type="text" name='name' value={data.name} onChange={handleChange} placeholder="write the car's name" className='input'/>
         </label>
         <br />
-        <label className='text' for='input'>
-        <p>Year:</p><input type="text" onChange={handleChange} placeholder="write the car's year" className='input'/>
+        <label className='text' htmlFor='input'>
+        <p>Year:</p><input type="text" name='year' value={data.year} onChange={handleChange} placeholder="write the car's year" className='input'/>
         </label>
         <br />
-        <label className='text' for='input'>
-        <p>Company:</p><input type="text" onChange={handleChange} placeholder="write the car's company" className='input'/>
+        <label className='text' htmlFor='input'>
+        <p>Company:</p><input type="text" name='company' value={data.company} onChange={handleChange} placeholder="write the car's company" className='input'/>
         </label>
         <br />
-        <label className='text' for='input'>
-        <p>Status:</p> <input type="text" onChange={handleChange} placeholder="write the car's status" className='input'/>
+        <label className='text' htmlFor='input'>
+        <p>Status:</p> <input type="text" name='status' value={data.status} onChange={handleChange} placeholder="write the car's status" className='input'/>
         </label>
         <br />
-        <label className='text' for='input'>
-        <p>Image:</p><input type="text" onChange={handleChange} placeholder="write the car's image" className='input'/>
+        <label className='text' htmlFor='input'>
+        <p>Image:</p><input type="text" value={data.image} name='image' onChange={handleChange} placeholder="write the car's image" className='input'/>
         </label>
         <br />
-        <button type="submit"  className='btn3'>Submit</button>
+        <button onClick={handleSubmit}type="submit"  className='btn3'>Submit</button>
       </form>
       </center>
     </div>
